@@ -51,7 +51,7 @@ public class PortHelper {
             return;
         }
 
-        // Тут мы проходимся по каждому числу в текущем списке и рекурсивно строим комбинации
+        // Пробег по числам в массиве
         for (Integer num : sequences.get(depth)) {
             current.add(num);
             getAllCombinationsRecursive(sequences, depth + 1, current, result);
